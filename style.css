@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&family=Poppins:ital,wght@1,300&display=swap"rel="stylesheet");
+:root {
+  --selected: #6feaf6;
+  --text-color: #777;
+  --white: #fff;
+  --dark-text: #1c2041;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--dark-text);
+  color: #fff;
+  font-size: 18px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.movie-select {
+  width: auto;
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+  justify-content: center;
+}
+select {
+  height: 20px;
+  font-size: 18px;
+  margin-left: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 10px;
+  gap: 30px;
+}
+.seat {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 2px;
+  width: 30px;
+  height: 25px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: var(--text-color);
+}
+.seat-occupied {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 2px;
+  width: 30px;
+  height: 25px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+  background-color: var(--white);
+}
+.seat-selected {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 2px;
+  width: 30px;
+  height: 25px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: var(--selected);
+}
+
+.screen-container {
+  perspective: 1100px;
+  margin-left: 460px;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+.screen {
+  box-sizing: border-box;
+  color: var(--text-color);
+  background-color: var(--white);
+  border-style: solid;
+  width: 440px;
+  height: 150px;
+  transform: rotateX(-45deg);
+}
+.seat-arrange {
+  margin-left: 480px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.seat-arrange1 {
+  margin-left: 630px;
+  position: relative;
+  bottom: 275px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.seat-arrange2 {
+  margin-left: 800px;
+  position: relative;
+  bottom: 552px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.final {
+  margin-left: 520px;
+  position: relative;
+  bottom: 540px;
+}
